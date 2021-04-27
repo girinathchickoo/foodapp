@@ -1,0 +1,37 @@
+
+
+.container-app h1,h2,h3{
+	color:#B8B8B6;
+	display:inline-block;
+	
+
+}
+
+.container h3::after{
+	width:90%;
+	height:10px;
+}
+
+.container-app hr{
+	opacity:0.4;
+	width:auto;
+}
+
+.space{
+	padding-left:130px;
+	padding-right:130px;
+}
+
+.svg{
+	width:20px;
+	height:20px;
+	margin-left:3px;
+
+}
+@media (max-width:800px){
+	.container-app hr{
+	opacity:0.4;
+	width:auto;
+}
+
+}
