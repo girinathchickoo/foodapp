@@ -60,7 +60,7 @@ margin-top:40px;
 	font-size:20px;
 
 }
-button{padding:10px 40px;color:black;};
+button{padding:10px 40px;color:black;}
 
 .star{
 	background: #5AE595;
@@ -76,6 +76,13 @@ button{padding:10px 40px;color:black;};
 	
 	margin-top:40px;
 	border-radius:10px;
+}
+.star{
+	background: #5AE595;
+	padding-left:15px;
+	padding-right:15px;
+	color:#fff;
+	border-radius: 3px;
 }
 
 }
