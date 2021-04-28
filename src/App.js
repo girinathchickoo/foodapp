@@ -9,7 +9,7 @@ function App () {
   const[click,setClick]=useState(false);
   const[outlet,setOut]=useState([]);
  
-  
+
 
    useEffect(()=>{
     fetch("https://eatoo.uberdoo.com/foodapp/public/api/guest/listRestaurant",{
@@ -31,27 +31,31 @@ function App () {
   }
 
   function renderOutlet(c){
-    setClick(c);
     console.log(c)
+    setClick(c);
+  
 
   }
   
   var o=outlet.map((d,i)=>{ return(<Outlet key={i} outlet={d} renderOutlet={renderOutlet}/>)})
-  console.log(o)
+  
 return (
 
     <div className="container">
     <div className="container1">
     
-    <Header  count={data.length} />
+    
     {click?
        
    <div>
-   <button></button>
+   <Header  count={outlet.length} />
+   <button onClick={()=>setClick(false)}>back</button>
    {o}</div>
     :
-   
+    <div>
+    <Header  count={data.length} />
     <Restaurant  data={data} renderOutlet={renderOutlet} setOutlet={setOutlet} />
+    </div>
     }
     </div>
     </div>
